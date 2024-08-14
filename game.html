@@ -31,9 +31,6 @@
         pausedIcon.src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAALBJREFUWEftl8ENgCAQBKUpiqAq6qMpjST4ICLH3a6YoB9/zDgnRF0IYd8mXu4zAt77VzuklDLvKvAL3BWIMeZM5Y6ckWgENRgpohIoBRAiJgHEWMwC1howAW0NqICmBkVgRIQqIBkLXaBX4zWBVo11BFqnJr1A77imCvTg53tBEZCAy+6ACoyA4QIaOGQEWjCkgBWuLoAAqwogwUMCyK/gei3RNlxLgPm0T2tP/zs+AFX+0cGShSIoAAAAAElFTkSuQmCC";
         const unpausedIcon = new Image();
         unpausedIcon.src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAGZJREFUWEft170NACEIhuFzKYZgKuZjqTNa2OjlpPCneC0NgS8PFUlV3+fgS9cEEJGtDu5e5zUBAnwJmFm3mtFfKYrUTq8g0jRSSwAEEEAAAQQQQAABBKYFVl0rBOgEVlH/9T1+HWdB7hPQJOoErAAAAABJRU5ErkJggg==";
-        
-        const grass = new Image();
-        grass.src = "assets/grass_solid.jpg";
 
         /*~ Player variable init */
         var player = { x: 400, y: 400, width: 50, height: 25, rotateAngle: 0, xVel: 0, yVel: 0, rotateVel: 0, vel: 0, x2: 0, y2: 0, rotateAngle2: 0, };
@@ -220,10 +217,7 @@
             }
             
             /*~ Draw background */
-            //ga.drawImage(backgroundImg, -worldScroll.x, -worldScroll.y, canvas.width * 4, canvas.height * 4);
-            for (let tile = 0; tile < (canvas.width/32)*(canvas.height/32); tile++) {
-                ga.drawImage(grass, -worldScroll.x + (tile%32)*32, -worldScroll.y + Math.floor((tile+10)/32)*16)
-            }
+            ga.drawImage(backgroundImg, -worldScroll.x, -worldScroll.y, canvas.width * 4, canvas.height * 4);
 
             /*~ Goal */
             if ((player.x > goal.x && player.x < goal.x + 100) && (player.y > goal.y && player.y < goal.y + 100)) {
