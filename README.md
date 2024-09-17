@@ -8,6 +8,7 @@
     <a href="/game.html">car game</a><br>
     <a href="/couch2048/game.html">couch 2048</a><br>
     <a href="/fnaw_offline/FNAW_Offline.html">five nights at winstons</a><br>
+    <a href="/everyones_sky/game.html">everyone's sky</a><br>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4362358068883926"
      crossorigin="anonymous"></script>
 <!-- footer -->
