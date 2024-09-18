@@ -6,9 +6,12 @@
   </head>
   <body>
     <a href="/game.html">car game</a><br>
-    <a href="/couch2048/game.html">couch 2048</a><br>
-    <a href="/fnaw_offline/FNAW_Offline.html">five nights at winstons</a><br>
-    <a href="/everyones_sky/game.html">everyone's sky</a><br>
+    <a href="/games/couch_2048">couch 2048</a><br>
+    <a href="/games/five_nights_at_winstons.html">five nights at winstons</a><br>
+    <a href="/games/super_liquid_soccer.html">super liquid soccer</a><br>
+    <a href="/games/everyones_sky.html">everyone's sy=jy</a><br>
+    <a href="/games/head_soccer_2023.html">head soccer 2023</a><br>
+    
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4362358068883926"
      crossorigin="anonymous"></script>
 <!-- footer -->
