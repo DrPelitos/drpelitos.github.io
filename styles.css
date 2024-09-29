@@ -1,0 +1,29 @@
+html, body {
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+#main{
+    margin: 20px;
+    z-index: 0;
+}
+textarea {
+    width: 20%;
+    height: 100px;
+    resize: none;
+}
+button {
+    margin-top: 10px;
+}
+.topbar{
+    font-family:'Times New Roman', Times, serif;
+}
+#bg{
+    margin: 0px;
+    z-index: -1;
+    position: absolute;
+}
+#bg_container{
+    margin: 0px;
+    overflow: hidden;
+}
