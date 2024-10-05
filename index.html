@@ -13,6 +13,9 @@
         <canvas id="bg"></canvas>
     </div>
     <div id="main">
+        <div id="top_bar">
+            <div class="bar_item"></div>
+        </div>
         <h1>DrPelitos</h1>
         me website of all glory
         <h2>My Games</h2>
@@ -26,15 +29,16 @@
         <a href="/games/super_liquid_soccer.html">super liquid soccer</a> *broken*<br>
 
         <h2>Send a suggestion</h2>
-        <form id="suggestionForm">
+        <form id="suggestion_form">
             <label for="suggestion">Note: if you are in school, try connecting to a hotspot or other wifi.</label><br>
             <textarea id="suggestion" required></textarea><br>
             <button type="submit">Send Suggestion</button>
         </form>
     </div>
     <script src="background.js"></script>
+    <script src="page.js"></script>
     <script>
-        document.getElementById('suggestionForm').addEventListener('submit', function(event) {
+        document.getElementById('suggestion_form').addEventListener('submit', function(event) {
             event.preventDefault();
 
             const suggestion = document.getElementById('suggestion').value;
