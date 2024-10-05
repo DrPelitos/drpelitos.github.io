@@ -15,17 +15,6 @@ textarea {
 button {
     margin-top: 10px;
 }
-#topbar{
-    width: 100%;
-    height: 5%;
-}
-.bar_item{
-    height: 3%;
-    transition: 0.3;
-}
-.bar_item:hover{
-    background
-}
 #bg{
     margin: 0px;
     z-index: -1;

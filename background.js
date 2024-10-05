@@ -8,7 +8,14 @@ var mouse = [0,0];
 var particles = [];
 
 document.addEventListener("mousemove", (e) => {
-    mouse = [e.clientX, e.clientY]
+    particles.forEach(particle => {
+		deltaX = particle.x - e.clientX;
+		deltaY = particle.y - e.clientY;
+		distance = Math.sqrt((deltaX * deltaX) + (deltaY * deltaY));
+		if (Math.abs(distance) < 50){
+			particle.push(deltaX, deltaY, distance);
+		}
+	})
 })
 
 window.addEventListener('resize', () => {
@@ -25,6 +32,9 @@ class Particle {
     }
 
     update(){
+		if (this.xVel > 0.5){this.xVel *= 0.95}
+		if (this.yVel > 0.5){this.yVel *= 0.95}
+
         this.x += this.xVel;
         this.y += this.yVel;
 
@@ -38,10 +48,16 @@ class Particle {
         ctx.arc(this.x, this.y, 4, 0,Math.PI * 2);
         ctx.fill();
     }
+	push(deltaX, deltaY){
+		this.xVel += (deltaX / distance) *2
+		this.yVel += (deltaY / distance) *2
+	}
 }
 
 function init() {
-    for (let i = 0; i < canvas.width/2; i++) {
+	balls = new URL(document.location).searchParams.get("p")
+	if (balls == null){balls = canvas.width}
+    for (let i = 0; i < balls; i++) {
         particles.push(new Particle(Math.random() * canvas.width, Math.random() * canvas.height));
     }
 }
