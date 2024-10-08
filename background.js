@@ -32,8 +32,8 @@ class Particle {
     }
 
     update(){
-		if (this.xVel > 0.5){this.xVel *= 0.95}
-		if (this.yVel > 0.5){this.yVel *= 0.95}
+	if (Math.abs(this.xVel) > 0.5){this.xVel *= 0.95}
+	if (Math.abs(this.yVel) > 0.5){this.yVel *= 0.95}
 
         this.x += this.xVel;
         this.y += this.yVel;
