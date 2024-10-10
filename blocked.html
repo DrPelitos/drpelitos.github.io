@@ -85,8 +85,14 @@
 </svg>
 
       </div>
-      <div class="blockScreenStripe-message">Oops, Teacher G. Nikolov has blocked this website for now.</div>
+      <div id="main_text" class="blockScreenStripe-message">Oops, Teacher has blocked this website for now.</div>
     </div>
   </div>
+  <script>
+    text = new URL(document.location).searchParams.get("text");
+    if (text != null){
+      document.getElementById("main_text").innerText = text;
+    }
+  </script>
 </body>
 </html>
