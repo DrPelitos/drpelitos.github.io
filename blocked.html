@@ -90,7 +90,7 @@
   <script>
     text = new URL(document.location).searchParams.get("t");
     if (text != null){
-      document.getElementById("main_text").innerText = text;
+      document.getElementById("main_text").innerText = atob(text);
     }
   </script>
 </body>
