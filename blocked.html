@@ -85,17 +85,12 @@
 
       </div>
       <div id="main_text" class="blockScreenStripe-message">Oops, Teacher John F. Smith has blocked this website for now.</div>
-      <div id="sub_text" class="blockScreenStripe-subMessage"></div>
     </div>
   </div>
   <script>
     text = new URL(document.location).searchParams.get("t");
     if (text != null){
       document.getElementById("main_text").innerText = atob(text);
-    }
-    subtext = new URL(document.location).searchParams.get("s");
-    if (text != null){
-      document.getElementById("sub_text").innerText = atob(text);
     }
   </script>
 </body>
