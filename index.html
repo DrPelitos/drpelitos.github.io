@@ -24,47 +24,9 @@
         <a href="/cookieclicker">cookie clicker</a><br>
         <a href="/games/head_soccer_2023.html">head soccer 2023</a> *broken*<br>
         <a href="/games/super_liquid_soccer.html">super liquid soccer</a> *broken*<br>
-
-        <h2>Send a suggestion</h2>
-        <form id="suggestion_form">
-            <label for="suggestion">Note: if you are in school, try connecting to a hotspot or other wifi.</label><br>
-            <textarea id="suggestion" required></textarea><br>
-            <button type="submit">Send Suggestion</button>
-        </form>
     </div>
     <script src="background.js"></script>
     <script src="page.js"></script>
-    <script>
-        document.getElementById('suggestion_form').addEventListener('submit', function(event) {
-            event.preventDefault();
-
-            const suggestion = document.getElementById('suggestion').value;
-            const webhookURL = 'https://discordapp.com/api/webhooks/1326009985909395539/eaD2i_kLWkQQZswfcXeWLvUz8U1Q14gfig1mGhVhusXPj_tLg1VfuA7r7FMxcZSdq2ZL'; // dont spam me
-            const payload = {
-                content: suggestion
-            };
-
-            fetch(webhookURL, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(payload)
-            })
-            .then(response => {
-                if (response.ok) {
-                    alert('Suggestion sent!');
-                    document.getElementById('suggestion').value = ''; 
-                } else {
-                    alert('Error sending suggestion. Please try again.');
-                }
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                alert('Error sending suggestion. Please try again.');
-            });
-        });
-    </script>
     
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4362358068883926"
      crossorigin="anonymous"></script>
