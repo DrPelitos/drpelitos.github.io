@@ -23,4 +23,5 @@ button {
 #bg_container{
     margin: 0px;
     overflow: hidden;
+    position: fixed;
 }
