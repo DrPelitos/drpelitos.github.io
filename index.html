@@ -173,6 +173,7 @@
     </div>
     <script src="background.js"></script>
     <script src="page.js"></script>
+    <script>window.onerror = function (message, source, line, column, error) { alert('An error occurred: ' + message); return true; };</script>
     
 <!--     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4362358068883926"
      crossorigin="anonymous"></script>
