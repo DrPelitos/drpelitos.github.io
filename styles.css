@@ -18,10 +18,9 @@ button {
 #bg{
     margin: 0px;
     z-index: -1;
-    position: absolute;
+    position: fixed;
 }
 #bg_container{
     margin: 0px;
     overflow: hidden;
-    position: fixed;
 }
