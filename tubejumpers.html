@@ -16,5 +16,10 @@
         game = document.getElementById("game")
         game.width = window.innerWidth
         game.height = window.innerHeight
+
+        document.addEventListener("resize", () => {
+            game.width = window.innerWidth
+            game.height = window.innerHeight
+        })
     </script>
 </html>
