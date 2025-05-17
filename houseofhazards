@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tube Jumpers</title>
+        <meta charset="UTF-8">
+        <style>
+            #game, body {
+                margin: 0;
+                overflow: hidden;
+            }
+        </style>
+    </head>
+    <body>
+        <iframe src="https://abinbins.github.io/a/house-of-hazards" id="game"></iframe>
+    </body>
+    <script>
+        game = document.getElementById("game")
+        game.width = window.innerWidth
+        game.height = window.innerHeight
+
+        window.addEventListener("resize", () => {
+            game.width = window.innerWidth
+            game.height = window.innerHeight
+        })
+    </script>
+</html>
