@@ -6,6 +6,7 @@
         <style>
             #game, body {
                 margin: 0;
+                overflow: hidden;
             }
         </style>
     </head>
@@ -17,7 +18,7 @@
         game.width = window.innerWidth
         game.height = window.innerHeight
 
-        document.addEventListener("resize", () => {
+        window.addEventListener("resize", () => {
             game.width = window.innerWidth
             game.height = window.innerHeight
         })
