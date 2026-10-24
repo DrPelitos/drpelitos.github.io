@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Tube Jumpers</title>
+        <title>Game</title>
         <meta charset="UTF-8">
         <style>
             #game, body {
@@ -11,10 +11,17 @@
         </style>
     </head>
     <body>
-        <iframe src="https://landsedu112.github.io/g5/class-490/" id="game"></iframe>
+        <iframe id="game"></iframe>
     </body>
     <script>
-        game = document.getElementById("game")
+        const params = new URLSearchParams(window.location.search)
+        const url = params.get("url")
+        const title = params.get("title")
+        if (title) document.title = title
+
+        const game = document.getElementById("game")
+        if (url) game.src = url
+
         game.width = window.innerWidth
         game.height = window.innerHeight
 

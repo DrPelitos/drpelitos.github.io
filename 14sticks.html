@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>14sticks</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                margin: 0;
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                font-family: Arial, sans-serif;
+                background: #fff;
+                color: #202124;
+            }
+            h1 {
+                font-size: 2.5rem;
+                font-weight: 400;
+                margin: 0 0 1.5rem;
+            }
+            form {
+                display: flex;
+                width: min(90vw, 560px);
+                gap: 0.5rem;
+            }
+            input[type="search"] {
+                flex: 1;
+                padding: 0.75rem 1rem;
+                font-size: 1rem;
+                border: 1px solid #dfe1e5;
+                border-radius: 24px;
+                outline: none;
+            }
+            input[type="search"]:focus {
+                border-color: #4285f4;
+                box-shadow: 0 0 0 1px #4285f4;
+            }
+            button {
+                padding: 0.75rem 1.25rem;
+                font-size: 1rem;
+                border: none;
+                border-radius: 4px;
+                background: #f8f9fa;
+                color: #3c4043;
+                cursor: pointer;
+            }
+            button:hover {
+                background: #f1f3f4;
+                box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>14sticks</h1>
+        <form action="https://www.google.com/search" method="get" role="search">
+            <input type="hidden" name="udm" value="14sticksinmybutt">
+            <input type="search" name="q" placeholder="Search Google" autofocus required>
+            <button type="submit">Search</button>
+        </form>
+    </body>
+</html>
